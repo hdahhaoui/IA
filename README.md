@@ -12,4 +12,5 @@ Ce projet utilise des données expérimentales d'essais œdométriques sur des a
 
 ```bash
 pip install -r requirements.txt
-python src/model_training.py
+python src
+```
