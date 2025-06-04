@@ -1,0 +1,10 @@
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+df = pd.read_excel('../data/FI-CLAY-oedo14-282.xlsx', sheet_name='data')
+
+# Exemple : explorer la corrélation avec le coefficient de fluage (OCR, w, PI, etc.)
+df_clean = df[['Depth, average (m)', 'PI', 'w', 'OCR', 'Coefficient of secondary compression']].dropna()
+sns.pairplot(df_clean)
+plt.show()
